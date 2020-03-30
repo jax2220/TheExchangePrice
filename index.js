@@ -14,7 +14,7 @@ function displayResultsActiveStocks(responseJson){
     console.log('display ran')
     console.log(responseJson)
     for( let i = 0; i < responseJson.mostActiveStock.length; i++){
-        $('.active-stocks').append(`<li>Company Name: ${responseJson.mostActiveStock[i].companyName}Ticker: ${responseJson.mostActiveStock[i].ticker}  Price:  ${responseJson.mostActiveStock[i].price}  Change: ${responseJson.mostActiveStock[i].changesPercentage}</li>`)
+        $('.active-stocks').append(`<li>Company Name: ${responseJson.mostActiveStock[i].companyName} Ticker: ${responseJson.mostActiveStock[i].ticker}  Price:  ${responseJson.mostActiveStock[i].price}  Change: ${responseJson.mostActiveStock[i].changesPercentage}</li>`)
     }
 }
 
