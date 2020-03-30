@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>The Exchange Price</title>
+</head>
+<body>
+    <!-- Top banner -->
+    <header>
+        <section class="banner">
+            <h1>TheExchangePrice</h1>
+        </section> 
+    </header>
+    <main>
+        <p>Search for a company using it's ticker symbol to get it's current price and other informtion.</p>
+        <!-- form for the users search -->
+        <form id="search">
+            <label for="search">Ticker Symbol</label>
+            <input type="text" name="search" id="input" placeholder="AAPL">
+            <input type="submit">
+        </form>
+        <!-- user results section upload to the DOM using jquery -->
+        <section  id="results-section" class="hidden"> 
+            <ul class="search-results">
+            
+            </ul>
+        </section>
+        <br>
+        <section id="active-stocks-section" class="hidden-1">
+            <ul class="active-stocks">
+
+            </ul>
+        </section>
+        <section class="js-error">
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <!-- <script src="second.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* syle for the top banner on home page */
+.banner{
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+}
+
+
+
+/* js-error unhide when js throws a error */
+.js-error{
+    
+}
+
+/* search results */
+.hidden{
+    display: none;
+}
+
+
+
+.search-results{
+    list-style: none;
+}
+.search-results li{
+    display: inline-block;
+}
