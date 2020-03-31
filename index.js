@@ -14,7 +14,7 @@ function displayResultsActiveStocks(responseJson){
     console.log('display ran')
     console.log(responseJson)
     for( let i = 0; i < responseJson.mostActiveStock.length; i++){
-        $('.active-stocks').append(`<li>Company Name: ${responseJson.mostActiveStock[i].companyName} Ticker: ${responseJson.mostActiveStock[i].ticker}  Price:  ${responseJson.mostActiveStock[i].price}  Change: ${responseJson.mostActiveStock[i].changesPercentage}</li>`)
+         $('.active-stocks').append(`<li class="active-stock-box">Ticker: ${responseJson.mostActiveStock[i].ticker} Change: ${responseJson.mostActiveStock[i].changesPercentage}</li>`)
     }
 }
 
@@ -27,7 +27,7 @@ function displayResults(responseJson){
     console.log(responseJson);
     $('.js-error').empty();
     $('.search-results').empty();
-    $('.search-results').append(`<li class="symbol">Ticker: ${responseJson.symbol}</li>` + `<br>` + `<li>Price: &#36;${responseJson.profile.price}</li>` + `<li>Description: ${responseJson.profile.description}</li>`)
+    $('.search-results').append(`<li class="symbol"> Name: ${responseJson.profile.companyName} Ticker: ${responseJson.symbol}</li>` + `<br>` + `<li>Price: &#36;${responseJson.profile.price}</li>` + `<li>Description: ${responseJson.profile.description}</li>`)
     $('#results-section').removeClass('hidden');
 }
 

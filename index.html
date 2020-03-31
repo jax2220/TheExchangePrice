@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Share+Tech+Mono&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
@@ -14,13 +16,18 @@
         </section> 
     </header>
     <main>
-        <p>Search for a company using it's ticker symbol to get it's current price and other informtion.</p>
+        <p class="info">Lookup Company Stock Market Price By Ticker Symbol</p>
+        <section id="user-input-box">
+            <h1>Search for Company Ticker.</h1>
         <!-- form for the users search -->
-        <form id="search">
-            <label for="search">Ticker Symbol</label>
-            <input type="text" name="search" id="input" placeholder="AAPL">
-            <input type="submit">
-        </form>
+            <form id="search">
+                <label for="search">Ticker Symbol</label>
+                <input type="text" name="search" id="input" placeholder="AAPL">
+                <input type="submit" class="submit-btn">
+            </form>
+        </section>
+        <section class="js-error">
+        </section>
         <!-- user results section upload to the DOM using jquery -->
         <section  id="results-section" class="hidden"> 
             <ul class="search-results">
@@ -33,8 +40,7 @@
 
             </ul>
         </section>
-        <section class="js-error">
-        </section>
+        
     </main>
     <footer>
 
