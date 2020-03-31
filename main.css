@@ -52,11 +52,15 @@ main{
 
 /* results for user input */
 #results-section{
+   
     background-color: lightblue;
     width: 80%;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+.ls-name{
+    font-family: 'Oswald', sans-serif;
 }
 
 /* js-error unhide when js throws a error */
@@ -86,8 +90,9 @@ main{
 /* active stocks section */
 
 .active-stocks{
+    padding-left: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
     text-align: center;
@@ -96,8 +101,8 @@ main{
 .active-stock-box{
     margin: 10px;
     background-color: lightblue;
-    width: 30%;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     padding:10px;
     display: flex;
     flex-wrap: wrap;

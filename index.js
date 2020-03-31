@@ -27,7 +27,7 @@ function displayResults(responseJson){
     console.log(responseJson);
     $('.js-error').empty();
     $('.search-results').empty();
-    $('.search-results').append(`<li class="symbol"> Name: ${responseJson.profile.companyName} Ticker: ${responseJson.symbol}</li>` + `<br>` + `<li>Price: &#36;${responseJson.profile.price}</li>` + `<li>Description: ${responseJson.profile.description}</li>`)
+    $('.search-results').append(`<li class="symbol"> <span class="ls-name">Name:</span> ${responseJson.profile.companyName}</li>` + `<br>` + `<li><span class="ls-name">price:</span> &#36;${responseJson.profile.price}</li>` + `<li><span class="ls-name">description:</span> ${responseJson.profile.description}</li>`)
     $('#results-section').removeClass('hidden');
 }
 
