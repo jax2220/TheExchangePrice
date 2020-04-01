@@ -6,7 +6,6 @@ main{
     font-family: 'Share Tech Mono', monospace;
     font-size: 20px;
 }
-
 /* syle for the top banner on home page */
 .banner{
     width: 100%;
@@ -23,12 +22,11 @@ main{
     align-items: center;
     margin-top: 10px;
 }
-
+/* app description */
 .info{
     width: 80%;
     margin: auto;
     text-align: center;
-
 }
 
 /* user input box */
@@ -39,7 +37,6 @@ main{
     text-align: center;
     margin: auto;
     border-radius: 3px;
-    
 }
 
 #user-input-box h1{
@@ -47,6 +44,7 @@ main{
     font-size: 20px;
     padding-bottom: 20px;
 }
+
 #input{
     background-color: lightgray;
     height: 30px;
@@ -64,43 +62,37 @@ main{
 
 /* results for user input */
 #results-section{
-   
     background-color: lightblue;
     width: 80%;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 30px;
 }
+
 .ls-name{
     font-family: 'Oswald', sans-serif;
 }
 
-/* js-error unhide when js throws a error */
-.js-error{
-    
-}
-
-/* search results */
+/* when user seaches class hidden will be removed so you can see the results section */
 .hidden{
     display: none;
 }
 
-
-
+/* user results section */
 .search-results{
     list-style: none;
 }
+
 .search-results li{
     display: inline-block;
 }
 
 .active-stocks-section{
     font-family: 'Oswald', sans-serif;
-    
     text-align: center;
 }
-/* active stocks section */
 
+/* active stocks section */
 .active-stocks{
     padding-left: 0;
     display: flex;
@@ -122,6 +114,7 @@ main{
     border-radius: 5px;
 }
 
+/* for screens that are bigger that 800px */
 @media screen and (min-width: 800px){
     main{
         font-size: 30px;
@@ -149,12 +142,10 @@ main{
     .submit-btn{
         font-size: 20px;
         width: 90px;
-        
     }
     #active-stocks-section{
         width: 80%;
         margin: auto;
     }
 }
-/* font-family: 'Share Tech Mono', monospace;
-font-family: 'Oswald', sans-serif; */
+

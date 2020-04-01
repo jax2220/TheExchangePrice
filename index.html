@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Share+Tech+Mono&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700%7cShare+Tech+Mono&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>The Exchange Price</title>
 </head>
 <body>
-    <!-- Top banner -->
+    <!-- Top banner  -->
     <header>
         <section class="banner">
             <h1>TheExchangePrice</h1>
@@ -17,32 +16,31 @@
     </header>
     <main>
         <p class="info">Lookup Company Stock Market Price By Ticker Symbol</p>
+        <!-- box that displays the user input section and the results section -->
         <section id="user-input-box">
             <h1>Search Company By Ticker Symbol</h1>
         <!-- form for the users search -->
             <form id="search">
-                <label for="search">Ticker Symbol</label>
+                <label for="input">Ticker Symbol</label>
                 <input type="text" name="search" id="input" placeholder="AAPL">
                 <input type="submit" class="submit-btn">
             </form>
         </section>
-        <section class="js-error">
-        </section>
+        <!-- if user searches a invalid titcker error message will be placed here -->
+        <div class="js-error">
+        </div>
         <!-- user results section upload to the DOM using jquery -->
-        <section  id="results-section" class="hidden"> 
+        <div  id="results-section" class="hidden"> 
             <ul class="search-results">
-            
             </ul>
-        </section>
+        </div>
         <br>
-        
+        <!-- section for the most active stocks -->
         <section id="active-stocks-section" class="hidden-1">
             <h1 class="active-stocks-section">Most Active Stocks Today</h1>
             <ul class="active-stocks">
-
             </ul>
         </section>
-        
     </main>
     <footer>
 

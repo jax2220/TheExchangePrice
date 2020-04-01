@@ -8,6 +8,7 @@ function activeStocks(){
     .catch(error => alert('Something went wrong. Try again later.'))
     
 };
+
 //  logic for displaying the most active stocks to the dom
 function displayResultsActiveStocks(responseJson){
     $('.active-stocks').empty();
@@ -18,10 +19,6 @@ function displayResultsActiveStocks(responseJson){
     }
 }
 
-
-
-
-
 // logic for displaying the API request to the DOM for the users stock ticker search and unhiding results-section
 function displayResults(responseJson){
     console.log(responseJson);
@@ -30,8 +27,6 @@ function displayResults(responseJson){
     $('.search-results').append(`<li class="symbol"> <span class="ls-name">Name:</span> ${responseJson.profile.companyName}</li>` + `<br>` + `<li><span class="ls-name">price:</span> &#36;${responseJson.profile.price}</li>` + `<li><span class="ls-name">description:</span> ${responseJson.profile.description}</li>`)
     $('#results-section').removeClass('hidden');
 }
-
-
 
 // logic for fetching API request for users search
 function getStock(baseUrl, searchStock){
