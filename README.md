@@ -1,3 +1,5 @@
-Look up the stock price for any public company using it's ticker symbol. Also get other relative information about that stock and the top 10 active stocks at that moment. 
+The Exchange Price
 
-STILL UNDER WORK
+Live Site- https://jax2220.github.io/TheExchangePrice/
+
+<img src="img/screenShot1.PNG>
