@@ -38,6 +38,7 @@ main{
     width: 80%;
     text-align: center;
     margin: auto;
+    border-radius: 3px;
     
 }
 
@@ -49,12 +50,16 @@ main{
 #input{
     background-color: lightgray;
     height: 30px;
+    font-size: 20px;
+    font-family: 'Share Tech Mono', monospace;
 }
+
 .submit-btn{
     font-size: 17px;
     width: 70px;
     margin: 10px auto;
     background-color: green;
+    border-radius: 3px;
 }
 
 /* results for user input */
@@ -114,6 +119,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    border-radius: 5px;
 }
 
 @media screen and (min-width: 800px){
@@ -139,6 +145,11 @@ main{
     .active-stock-box{
         width: 210px;
         height: 210px;
+    }
+    .submit-btn{
+        font-size: 20px;
+        width: 90px;
+        
     }
     #active-stocks-section{
         width: 80%;
